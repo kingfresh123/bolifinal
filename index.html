@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941"
-     crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,10 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-   
+
 
     <script>
         tailwind.config = {
@@ -77,12 +77,147 @@
         .animate-marquee:hover {
             animation-play-state: paused;
         }
+        
+        .data-flyer {
+            max-width: 650px;
+            margin: 35px auto;
+            padding: 12px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #10145c, #5421a8, #0879ce);
+            box-shadow: 0 12px 35px #0003;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .flyer-content {
+            border: 2px solid #facc15;
+            border-radius: 16px;
+            padding: 24px 16px;
+        }
+        
+        .flyer-label {
+            color: #fde047;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        
+        .data-flyer h2 {
+            font-size: clamp(23px, 5vw, 36px);
+            margin: 14px 0 5px;
+            font-weight: 900;
+        }
+        
+        .flyer-subtitle {
+            margin: 5px 0 18px;
+            color: #fff;
+        }
+        
+        .network-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 18px 0 25px;
+        }
+        
+        .network-list span {
+            background: #fff;
+            color: #20205c;
+            padding: 8px 12px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        .data-flyer h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .data-prices {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+        
+        .data-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            color: #171747;
+            padding: 15px 12px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .data-price strong {
+            background: #facc15;
+            padding: 7px 9px;
+            border-radius: 6px;
+        }
+        
+        .data-price:last-child {
+            grid-column: 1 / -1;
+        }
+        
+        .flyer-offer {
+            font-weight: bold;
+            margin: 22px 0;
+        }
+        
+        .buy-data-btn,
+        .ussd-btn {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 900;
+            margin-top: 12px;
+        }
+        
+        .buy-data-btn {
+            background: #facc15;
+            color: #161644;
+        }
+        
+        .ussd-btn {
+            background: white;
+            color: #171747;
+        }
+        
+        .buy-data-btn:hover,
+        .ussd-btn:hover {
+            opacity: 0.85;
+        }
+        
+        .agent-code,
+        .flyer-contact {
+            margin: 15px 0 0;
+            font-size: 14px;
+        }
+        
+        .flyer-contact a {
+            color: #fde047;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 380px) {
+            .data-price {
+                padding: 12px 8px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
 <body class="bg-brand-bg text-brand-text flex flex-col min-h-screen pb-20 md:pb-24">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
     <!-- ================= TOP UTILITY HEADER ================= -->
     <div class="bg-brand-dark text-white text-xs py-2 px-4 border-b border-blue-900/50">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
@@ -103,8 +238,7 @@
             </div>
         </div>
     </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
     <!-- ================= MAIN BRANDING & SEARCH HEADER ================= -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
@@ -123,8 +257,7 @@
                     </p>
                 </div>
             </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941"
-     crossorigin="anonymous"></script>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
             <!-- Search Bar -->
             <div class="hidden md:flex flex-1 max-w-md mx-6 relative">
                 <input id="global-search-input" onkeyup="handleGlobalSearch(event)" type="text" placeholder="Search songs, artists, articles, events..." class="w-full pl-10 pr-4 py-2 bg-brand-bg text-sm rounded-full border border-slate-200 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
@@ -159,6 +292,7 @@
                     <li><button onclick="switchTab('artists')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-user-astronaut"></i> Artists</button></li>
                     <li><button onclick="switchTab('events')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-calendar-days"></i> Kuong Nyebu Festivals</button></li>
                     <li><button onclick="switchTab('videos')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-circle-play"></i> Music Videos</button></li>
+                    <li><button onclick="switchTab('data')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5 text-amber-300"><i class="fa-solid fa-wifi"></i> Buy Data Bundle</button></li>
                     <li><button onclick="switchTab('ceo')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-crown text-amber-400"></i> CEO Profile</button></li>
                 </ul>
                 <button onclick="promptAdminLogin()" class="text-xs bg-brand text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 font-semibold transition flex items-center gap-1">
@@ -167,8 +301,7 @@
             </div>
         </nav>
     </header>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark text-white border-b border-blue-900 px-4 py-4 space-y-2 text-sm font-semibold">
         <div class="mb-3 relative">
@@ -181,6 +314,7 @@
         <button onclick="switchTab('artists'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-user-astronaut mr-2"></i> Ghanaian & African Artists</button>
         <button onclick="switchTab('events'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-calendar-days mr-2"></i> Kuong Nyebu  Festival)</button>
         <button onclick="switchTab('videos'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-circle-play mr-2"></i> Music Videos</button>
+        <button onclick="switchTab('data'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand text-amber-300"><i class="fa-solid fa-wifi mr-2"></i> Buy Data Bundle</button>
         <button onclick="switchTab('ceo'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-crown text-amber-400 mr-2"></i> About King Fresh (CEO)</button>
         <button onclick="promptAdminLogin(); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded bg-brand text-white font-bold"><i class="fa-solid fa-shield-halved mr-2"></i> Admin Portal (Password Protected)</button>
     </div>
@@ -489,6 +623,49 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- TAB: BUY DATA BUNDLE -->
+        <div id="tab-data" class="tab-content space-y-6 hidden">
+            <section id="data-selling" class="data-flyer">
+                <div class="flyer-content">
+                    <span class="flyer-label">FAST • AFFORDABLE • RELIABLE</span>
+
+                    <h2>KING FRESH DATA HUB</h2>
+                    <p class="flyer-subtitle">Your Trusted Data Plug</p>
+
+                    <div class="network-list">
+                        <span>MTN</span>
+                        <span>Telecel</span>
+                        <span>AirtelTigo</span>
+                    </div>
+
+                    <h3>BUY YOUR DATA BUNDLE</h3>
+
+                    <div class="data-prices">
+                        <div class="data-price"><span>1GB</span><strong>GH₵5.5</strong></div>
+                        <div class="data-price"><span>2GB</span><strong>GH₵10</strong></div>
+                        <div class="data-price"><span>3GB</span><strong>GH₵15</strong></div>
+                        <div class="data-price"><span>4GB</span><strong>GH₵20</strong></div>
+                        <div class="data-price"><span>5GB</span><strong>GH₵27</strong></div>
+                    </div>
+
+                    <p class="flyer-offer">Affordable Data • All Networks</p>
+
+                    <a class="buy-data-btn" href="https://www.cheapdata.shop/shop/king-fresh-1772561979886">
+                   BUY DATA NOW →
+                </a>
+
+                    <a class="ussd-btn" href="tel:*426*119%23">
+                  Dial *426*119# to Buy
+                </a>
+
+                    <p class="agent-code">Agent Code: 5270</p>
+                    <p class="flyer-contact">
+                        Call: <a href="tel:0597735482">0597735482</a>
+                    </p>
+                </div>
+            </section>
         </div>
 
         <!-- TAB 7: CEO PROFILE PAGE -->
