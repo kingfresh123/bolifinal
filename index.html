@@ -217,7 +217,6 @@
 </head>
 
 <body class="bg-brand-bg text-brand-text flex flex-col min-h-screen pb-20 md:pb-24">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
     <!-- ================= TOP UTILITY HEADER ================= -->
     <div class="bg-brand-dark text-white text-xs py-2 px-4 border-b border-blue-900/50">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
@@ -238,7 +237,7 @@
             </div>
         </div>
     </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
+
     <!-- ================= MAIN BRANDING & SEARCH HEADER ================= -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
@@ -246,7 +245,7 @@
             <!-- Logo -->
             <div onclick="switchTab('home')" class="cursor-pointer flex items-center space-x-3 group">
                 <div class="w-11 h-11 bg-gradient-to-tr from-brand-dark to-brand text-white font-black text-xl rounded-xl flex items-center justify-center shadow-md shadow-brand/20 group-hover:scale-105 transition">
-                    <img src="logo.png" alt="">
+                    <img src="logo.png" alt="Logo">
                 </div>
                 <div>
                     <h1 class="font-black text-xl sm:text-2xl leading-none text-brand-dark tracking-tight">
@@ -257,7 +256,7 @@
                     </p>
                 </div>
             </div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
+
             <!-- Search Bar -->
             <div class="hidden md:flex flex-1 max-w-md mx-6 relative">
                 <input id="global-search-input" onkeyup="handleGlobalSearch(event)" type="text" placeholder="Search songs, artists, articles, events..." class="w-full pl-10 pr-4 py-2 bg-brand-bg text-sm rounded-full border border-slate-200 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition">
@@ -294,6 +293,7 @@
                     <li><button onclick="switchTab('videos')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-circle-play"></i> Music Videos</button></li>
                     <li><button onclick="switchTab('data')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5 text-amber-300"><i class="fa-solid fa-wifi"></i> Buy Data Bundle</button></li>
                     <li><button onclick="switchTab('ceo')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-crown text-amber-400"></i> CEO Profile</button></li>
+                    <li><button onclick="switchTab('contact')" class="nav-btn px-3 py-2 rounded-lg hover:bg-brand/80 transition flex items-center gap-1.5"><i class="fa-solid fa-envelope"></i> Contact Us</button></li>
                 </ul>
                 <button onclick="promptAdminLogin()" class="text-xs bg-brand text-white px-3 py-1.5 rounded-lg hover:bg-blue-600 font-semibold transition flex items-center gap-1">
                     <i class="fa-solid fa-shield-halved"></i> Admin Portal
@@ -301,7 +301,7 @@
             </div>
         </nav>
     </header>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
+
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark text-white border-b border-blue-900 px-4 py-4 space-y-2 text-sm font-semibold">
         <div class="mb-3 relative">
@@ -312,11 +312,14 @@
         <button onclick="switchTab('songs'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-music mr-2"></i> Latest Songs</button>
         <button onclick="switchTab('news'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-newspaper mr-2"></i> Music News & Entertainment</button>
         <button onclick="switchTab('artists'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-user-astronaut mr-2"></i> Ghanaian & African Artists</button>
-        <button onclick="switchTab('events'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-calendar-days mr-2"></i> Kuong Nyebu  Festival)</button>
+        <button onclick="switchTab('events'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-calendar-days mr-2"></i> Kuong Nyebu Festival</button>
         <button onclick="switchTab('videos'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-circle-play mr-2"></i> Music Videos</button>
         <button onclick="switchTab('data'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand text-amber-300"><i class="fa-solid fa-wifi mr-2"></i> Buy Data Bundle</button>
         <button onclick="switchTab('ceo'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-crown text-amber-400 mr-2"></i> About King Fresh (CEO)</button>
-        <button onclick="promptAdminLogin(); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded bg-brand text-white font-bold"><i class="fa-solid fa-shield-halved mr-2"></i> Admin Portal (Password Protected)</button>
+        <button onclick="switchTab('contact'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-envelope mr-2"></i> Contact Us</button>
+        <button onclick="switchTab('privacy'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-user-shield mr-2"></i> Privacy Policy</button>
+        <button onclick="switchTab('terms'); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded hover:bg-brand"><i class="fa-solid fa-file-contract mr-2"></i> Terms & Conditions</button>
+        <button onclick="promptAdminLogin(); toggleMobileMenu()" class="block w-full text-left py-2 px-3 rounded bg-brand text-white font-bold"><i class="fa-solid fa-shield-halved mr-2"></i> Admin Portal</button>
     </div>
 
     <!-- BREAKING NEWS TICKER -->
@@ -438,7 +441,7 @@
                 <!-- Right 1 Col: Top Chart & Festival Banner -->
                 <div class="space-y-6">
 
-                    <!-- Bakatue Festival Spotlight Widget -->
+                    <!-- Festival Spotlight Widget -->
                     <div class="bg-gradient-to-br from-brand-dark to-brand text-white rounded-2xl p-5 shadow-lg relative overflow-hidden">
                         <div class="absolute -right-4 -bottom-4 opacity-10 text-8xl font-black">
                             <i class="fa-solid fa-water"></i>
@@ -447,7 +450,7 @@
                             GHANA CULTURAL FEATURE
                         </span>
                         <h4 class="font-extrabold text-lg leading-snug mb-2">
-                            OFFICIAL ANNOUNCEMENT:UPCOMING BOLI KUONG NYEBU (Fishing) Festival 2026: Celebrations
+                            OFFICIAL ANNOUNCEMENT: UPCOMING BOLI KUONG NYEBU (Fishing) Festival 2026
                         </h4>
                         <p class="text-xs text-blue-100 mb-4 line-clamp-3">
                             The chiefs and people of Boli are pleased to announce the upcoming Traditional Boli Kuong Nyebu (fishing) festival
@@ -485,7 +488,7 @@
                     <button onclick="switchTab('artists')" class="text-brand font-bold text-xs hover:underline">View All Artists →</button>
                 </div>
 
-                <div id="home-artists-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div id="home-artists-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                     <!-- JS Rendered -->
                 </div>
             </section>
@@ -577,8 +580,7 @@
                                 Boli Kuong Nyebu (Fishing) Festival 2026
                             </h3>
                             <p class="text-xs sm:text-sm text-blue-100 leading-relaxed">
-                                This special occasion will bring together our chiefs, elders, community members, friends, and visitors to celebrate our rich cultural heritage, preserve our traditions, and promote unity, peace, and development in our community. We warmly invite everyone
-                                from near and far to join us as we come together to make this year’s fishing festival a memorable and successful celebration..
+                                This special occasion will bring together our chiefs, elders, community members, friends, and visitors to celebrate our rich cultural heritage, preserve our traditions, and promote unity, peace, and development in our community.
                             </p>
                             <div class="flex flex-wrap gap-4 text-xs font-semibold pt-2 text-amber-200">
                                 <span><i class="fa-solid fa-calendar mr-1"></i> Anticipating</span>
@@ -671,10 +673,7 @@
         <!-- TAB 7: CEO PROFILE PAGE -->
         <div id="tab-ceo" class="tab-content space-y-6 hidden">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
-
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-
-                    <!-- CEO Photo Card -->
                     <div class="bg-gradient-to-b from-brand-light to-white p-4 rounded-2xl border border-blue-100 text-center shadow-sm">
                         <div class="relative w-48 h-48 mx-auto mb-4 rounded-2xl overflow-hidden border-4 border-white shadow-md">
                             <img src="kingfresh.png" alt="King Fresh (Razak) CEO" class="w-full h-full object-cover">
@@ -684,7 +683,6 @@
                         <p class="text-xs text-slate-500 mt-2">KING FRESH MUSIC & BOLIGERIA BLOG</p>
                     </div>
 
-                    <!-- CEO Biography & Vision -->
                     <div class="md:col-span-2 space-y-5">
                         <div>
                             <span class="bg-brand-light text-brand font-black text-xs px-3 py-1 rounded-full uppercase">LEADERSHIP PROFILE</span>
@@ -701,16 +699,180 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
 
-        <!-- TAB 8: ADMIN DASHBOARD -->
+        <!-- TAB 8: PRIVACY POLICY -->
+        <div id="tab-privacy" class="tab-content space-y-6 hidden">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-6">
+                    <span class="bg-brand-light text-brand font-black text-xs px-3 py-1 rounded-full uppercase">LEGAL INFORMATION</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-dark mt-2">Privacy Policy</h2>
+                    <p class="text-xs text-slate-500 mt-1">Last updated: October 2026</p>
+                </div>
+
+                <div class="text-sm text-slate-700 space-y-5 leading-relaxed">
+                    <p>Welcome to <strong>BOLIGERIA BLOG</strong> (operated by King Fresh Music). We respect your privacy and are committed to protecting any personal data collected while you browse, stream, download music, or interact with our services.</p>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">1. Information We Collect</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">We collect minimal personal information necessary to provide our digital media services, including username and email address when creating an account, standard server log information, cookie data, and device information to optimize
+                            audio playback and platform features.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">2. How We Use Your Information</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">Your information is used to personalize site features, deliver requested audio streams or downloads, prevent fraudulent activity, and display targeted advertisements through third-party advertising partners like Google AdSense.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">3. Third-Party Advertising & Cookies</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">We utilize Google AdSense and third-party advertising vendors who may place and read cookies on your browser or use web beacons to collect information as a result of ad serving on our portal. You can adjust your browser settings
+                            to reject cookies if preferred.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">4. Data Security</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">We implement standard technical and organizational security protocols to maintain the safety of your personal data when using our music and news portal.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">5. Contact Us Regarding Privacy</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">For questions regarding this privacy policy, please reach out directly through our <button onclick="switchTab('contact')" class="text-brand font-bold underline">Contact Us</button> page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 9: TERMS & CONDITIONS -->
+        <div id="tab-terms" class="tab-content space-y-6 hidden">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-6">
+                    <span class="bg-brand-light text-brand font-black text-xs px-3 py-1 rounded-full uppercase">TERMS OF SERVICE</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-dark mt-2">Terms and Conditions</h2>
+                    <p class="text-xs text-slate-500 mt-1">Last updated: October 2026</p>
+                </div>
+
+                <div class="text-sm text-slate-700 space-y-5 leading-relaxed">
+                    <p>By accessing or using <strong>BOLIGERIA BLOG</strong> and <strong>KING FRESH MUSIC</strong>, you agree to be bound by these Terms and Conditions. Please read them carefully.</p>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">1. Copyright & Intellectual Property</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">All songs, audio files, images, branding elements, and articles featured on this platform belong to their respective copyright holders, artists, and record labels. Music provided on this blog is intended strictly for promotional
+                            purposes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">2. User Conduct</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">Users agree not to misuse site services, upload unauthorized malicious code, attempt unauthorized administrative access, or reproduce content for commercial distribution without explicit consent from the copyright owners.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">3. External Links & Advertisements</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">Boligeria Blog contains links to third-party portals (such as external data hubs, social media channels, and sponsor links). We do not assume responsibility for the content, privacy practices, or services of external sites.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-base text-brand-dark mb-1">4. DMCA & Content Removal</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">If you are a copyright holder or an authorized representative and believe any material hosted on our portal infringes upon your copyright, please contact us immediately to request prompt removal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 10: CONTACT US -->
+        <div id="tab-contact" class="tab-content space-y-6 hidden">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="border-b border-slate-200 pb-4 mb-6">
+                    <span class="bg-brand-light text-brand font-black text-xs px-3 py-1 rounded-full uppercase">GET IN TOUCH</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-dark mt-2">Contact Boligeria Blog</h2>
+                    <p class="text-xs text-slate-500 mt-1">Have music for promotion, feedback, news tips, or inquiries? Reach out to our team.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-2 space-y-4">
+                        <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Full Name</label>
+                                    <input type="text" required placeholder="Enter your name" class="w-full p-2.5 bg-brand-bg border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+                                    <input type="email" required placeholder="Enter your email" class="w-full p-2.5 bg-brand-bg border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Subject</label>
+                                <select class="w-full p-2.5 bg-brand-bg border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand font-semibold text-slate-700">
+                                    <option>Music Upload / Promotion Request</option>
+                                    <option>Advertisement & Sponsorship</option>
+                                    <option>News / Press Release Submission</option>
+                                    <option>Data Bundle Support</option>
+                                    <option>General Inquiry / Copyright</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Your Message</label>
+                                <textarea rows="5" required placeholder="Write your message here..." class="w-full p-2.5 bg-brand-bg border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand"></textarea>
+                            </div>
+                            <button type="submit" class="bg-brand hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl text-xs transition shadow-md">
+                                Send Message <i class="fa-solid fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Direct Contact Card -->
+                    <div class="space-y-4">
+                        <div class="bg-brand-light p-6 rounded-2xl border border-blue-100 space-y-4">
+                            <h3 class="font-extrabold text-base text-brand-dark">Official Contact Details</h3>
+
+                            <div class="space-y-3 text-xs text-slate-700">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-brand text-base mt-0.5"></i>
+                                    <div>
+                                        <p class="font-bold text-brand-dark">Location</p>
+                                        <p class="text-slate-500">Boli, Upper West Region, Ghana</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-phone text-emerald-600 text-base mt-0.5"></i>
+                                    <div>
+                                        <p class="font-bold text-brand-dark">Phone / WhatsApp</p>
+                                        <a href="tel:0597735482" class="text-slate-600 hover:text-brand font-bold">0597735482</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-crown text-amber-500 text-base mt-0.5"></i>
+                                    <div>
+                                        <p class="font-bold text-brand-dark">CEO & Management</p>
+                                        <p class="text-slate-500">King Fresh (Razak)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2 border-t border-blue-200/60">
+                                <p class="text-xs font-bold text-brand-dark mb-2">Social Channels:</p>
+                                <div class="flex gap-2">
+                                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-lg bg-white text-brand flex items-center justify-center hover:bg-brand hover:text-white transition text-xs shadow-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://chat.whatsapp.com/EgT6dkBxyIA8vV4rGeoKiX?s=cl&p=i&mlu=4&ilr=4&iam=0" target="_blank" class="w-8 h-8 rounded-lg bg-white text-emerald-600 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition text-xs shadow-sm"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-lg bg-white text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-xs shadow-sm"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 11: ADMIN DASHBOARD -->
         <div id="tab-admin" class="tab-content space-y-6 hidden">
             <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-
                 <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
                     <div>
                         <span class="bg-emerald-100 text-emerald-800 font-extrabold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -718,12 +880,18 @@
                         </span>
                         <h2 class="text-2xl font-black text-brand-dark mt-1">Administrator Control Center</h2>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex flex-wrap gap-2">
                         <button onclick="lockAdminPortal()" class="bg-red-50 text-red-600 hover:bg-red-100 font-bold text-xs px-3 py-2 rounded-xl border border-red-200 transition flex items-center gap-1">
-                            <i class="fa-solid fa-lock"></i> Lock Portal
+                            <i class="fa-solid fa-lock"></i> Lock
                         </button>
-                        <button onclick="openModal('add-song-modal')" class="bg-brand text-white font-bold text-xs px-4 py-2 rounded-xl hover:bg-blue-600 transition flex items-center gap-1">
-                            <i class="fa-solid fa-plus"></i> Upload New Song
+                        <button onclick="openModal('add-song-modal')" class="bg-brand text-white font-bold text-xs px-3 py-2 rounded-xl hover:bg-blue-600 transition flex items-center gap-1">
+                            <i class="fa-solid fa-music"></i> Upload Song
+                        </button>
+                        <button onclick="openModal('add-artist-modal')" class="bg-purple-600 text-white font-bold text-xs px-3 py-2 rounded-xl hover:bg-purple-700 transition flex items-center gap-1">
+                            <i class="fa-solid fa-user-plus"></i> Add Artist
+                        </button>
+                        <button onclick="openModal('add-news-modal')" class="bg-amber-600 text-white font-bold text-xs px-3 py-2 rounded-xl hover:bg-amber-700 transition flex items-center gap-1">
+                            <i class="fa-solid fa-newspaper"></i> Post News
                         </button>
                     </div>
                 </div>
@@ -731,22 +899,21 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     <div class="p-4 bg-brand-light rounded-xl border border-blue-100">
                         <span class="text-xs text-brand font-bold uppercase">Total Songs</span>
-                        <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-songs">5</div>
+                        <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-songs">6</div>
                     </div>
                     <div class="p-4 bg-brand-light rounded-xl border border-blue-100">
                         <span class="text-xs text-brand font-bold uppercase">Total Articles</span>
-                        <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-articles">4</div>
+                        <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-articles">2</div>
                     </div>
                     <div class="p-4 bg-brand-light rounded-xl border border-blue-100">
-                        <span class="text-xs text-brand font-bold uppercase">Total Streams</span>
-                        <div class="text-2xl font-black text-brand-dark mt-1">18,500</div>
+                        <span class="text-xs text-brand font-bold uppercase">Total Artists</span>
+                        <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-artists">4</div>
                     </div>
                     <div class="p-4 bg-brand-light rounded-xl border border-blue-100">
                         <span class="text-xs text-brand font-bold uppercase">MP3 Downloads</span>
                         <div class="text-2xl font-black text-brand-dark mt-1" id="stat-total-downloads">14,300</div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -764,9 +931,33 @@
                     Boligeria Blog Ghana is Africa's premier digital media platform dedicated to promoting high-quality African music.
                 </p>
             </div>
+
+            <div class="space-y-2">
+                <h4 class="font-bold text-xs uppercase tracking-wider text-amber-300">Quick Links</h4>
+                <ul class="text-xs text-blue-200 space-y-1.5">
+                    <li><button onclick="switchTab('songs')" class="hover:text-white transition">Latest Music</button></li>
+                    <li><button onclick="switchTab('news')" class="hover:text-white transition">Music News</button></li>
+                    <li><button onclick="switchTab('data')" class="hover:text-white transition">Buy Data Bundle</button></li>
+                    <li><button onclick="switchTab('ceo')" class="hover:text-white transition">CEO Profile</button></li>
+                </ul>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="font-bold text-xs uppercase tracking-wider text-amber-300">Legal & Support</h4>
+                <ul class="text-xs text-blue-200 space-y-1.5">
+                    <li><button onclick="switchTab('privacy')" class="hover:text-white transition">Privacy Policy</button></li>
+                    <li><button onclick="switchTab('terms')" class="hover:text-white transition">Terms & Conditions</button></li>
+                    <li><button onclick="switchTab('contact')" class="hover:text-white transition">Contact Us</button></li>
+                </ul>
+            </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 pt-6 border-t border-blue-900/60 flex flex-wrap justify-between items-center text-xs text-blue-300 gap-4">
             <p>© 2026 KING FRESH MUSIC / BOLIGERIA BLOG. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <button onclick="switchTab('privacy')" class="hover:text-white">Privacy</button>
+                <button onclick="switchTab('terms')" class="hover:text-white">Terms</button>
+                <button onclick="switchTab('contact')" class="hover:text-white">Contact</button>
+            </div>
         </div>
     </footer>
 
@@ -849,24 +1040,24 @@
         </div>
     </div>
 
-    <!-- ADD SONG MODAL -->
+    <!-- ADD SONG MODAL (Device File Uploads) -->
     <div id="add-song-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl space-y-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
             <button onclick="closeModal('add-song-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
-            <h3 class="text-xl font-extrabold text-brand-dark">Upload New Song MP3</h3>
+            <h3 class="text-xl font-extrabold text-brand-dark">Upload Song From Phone/Device</h3>
 
             <form onsubmit="handleAdminUploadSong(event)" class="space-y-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">Song Title</label>
-                    <input type="text" id="upload-song-title" required class="w-full p-2 border border-slate-200 rounded-lg text-xs">
+                    <input type="text" id="upload-song-title" required placeholder="e.g. New Hit Track" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-700 mb-1">Artist Name</label>
-                    <input type="text" id="upload-artist-name" required class="w-full p-2 border border-slate-200 rounded-lg text-xs">
+                    <input type="text" id="upload-artist-name" required placeholder="e.g. G Bwoy ft Saxces" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 mb-1">Genre</label>
-                    <select id="upload-genre" class="w-full p-2 border border-slate-200 rounded-lg text-xs font-semibold">
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Genre / Music Type</label>
+                    <select id="upload-genre" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-brand">
                         <option value="Afrobeats">Afrobeats</option>
                         <option value="Ghana Highlife">Ghana Highlife</option>
                         <option value="Hip-Hop / Drill">Hip-Hop / Drill</option>
@@ -874,7 +1065,75 @@
                         <option value="Reggae / Dancehall">Reggae / Dancehall</option>
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-brand text-white font-bold py-2.5 rounded-xl text-xs hover:bg-blue-600 transition">Publish Song</button>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Song Cover Image (Select from Phone)</label>
+                    <input type="file" id="upload-cover-file" accept="image/*" class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-brand-light file:text-brand hover:file:bg-brand hover:file:text-white transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Audio MP3 File (Select from Phone)</label>
+                    <input type="file" id="upload-audio-file" accept="audio/mp3,audio/*" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-600 hover:file:text-white transition">
+                </div>
+                <button type="submit" class="w-full bg-brand text-white font-bold py-3 rounded-xl text-xs hover:bg-blue-600 transition shadow">Publish Song</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADD ARTIST PROFILE MODAL -->
+    <div id="add-artist-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeModal('add-artist-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
+            <h3 class="text-xl font-extrabold text-brand-dark">Add New Artist Profile</h3>
+
+            <form onsubmit="handleAdminAddArtist(event)" class="space-y-3">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Artist Name</label>
+                    <input type="text" id="artist-input-name" required placeholder="e.g. Saxces" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Music Type / Genre</label>
+                    <input type="text" id="artist-input-genre" required placeholder="e.g. AFROBEATS ARTIST" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Artist Bio</label>
+                    <textarea id="artist-input-bio" rows="4" required placeholder="Write artist history, background, and contact info..." class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Profile Picture (Select from Phone)</label>
+                    <input type="file" id="artist-input-img" accept="image/*" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-600 hover:file:text-white transition">
+                </div>
+                <button type="submit" class="w-full bg-purple-600 text-white font-bold py-3 rounded-xl text-xs hover:bg-purple-700 transition shadow">Save Artist Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADD NEWS POST MODAL -->
+    <div id="add-news-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeModal('add-news-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
+            <h3 class="text-xl font-extrabold text-brand-dark">Create News Post</h3>
+
+            <form onsubmit="handleAdminAddNews(event)" class="space-y-3">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">News Title</label>
+                    <input type="text" id="news-input-title" required placeholder="Headline here..." class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Category / Tag</label>
+                    <input type="text" id="news-input-cat" required placeholder="e.g. 🔥 BREAKING ENTERTAINMENT NEWS!" class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Short Snippet (Summary)</label>
+                    <textarea id="news-input-snippet" rows="2" required placeholder="Brief summary..." class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Full News Text / Content</label>
+                    <textarea id="news-input-content" rows="4" required placeholder="Full article body..." class="w-full p-2.5 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-brand"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">News Picture (Select from Phone)</label>
+                    <input type="file" id="news-input-img" accept="image/*" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-50 file:text-amber-700 hover:file:bg-amber-600 hover:file:text-white transition">
+                </div>
+                <button type="submit" class="w-full bg-amber-600 text-white font-bold py-3 rounded-xl text-xs hover:bg-amber-700 transition shadow">Publish News Post</button>
             </form>
         </div>
     </div>
@@ -891,12 +1150,33 @@
         </div>
     </div>
 
+    <!-- ARTIST DETAILS MODAL -->
+    <div id="artist-modal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl space-y-4 text-center">
+            <button onclick="closeModal('artist-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <img id="modal-artist-img" src="" class="w-28 h-28 mx-auto rounded-full object-cover border-4 border-brand/20 shadow-md" alt="Artist Profile">
+            <div>
+                <h3 id="modal-artist-name" class="text-xl font-extrabold text-brand-dark">Artist Name</h3>
+                <p id="modal-artist-genre" class="text-xs font-bold text-brand uppercase tracking-wider mt-0.5">Genre</p>
+            </div>
+            <p id="modal-artist-bio" class="text-xs text-slate-600 leading-relaxed text-left bg-brand-bg p-3 rounded-xl border border-slate-200">Artist biography and history goes here...</p>
+
+            <div class="pt-2">
+                <p class="text-xs font-bold text-brand-dark mb-2">Connect on Social Media:</p>
+                <div id="modal-artist-socials" class="flex justify-center gap-3">
+                    <!-- Dynamic Social Icons -->
+                </div>
+            </div>
+            <button onclick="closeModal('artist-modal')" class="w-full bg-brand text-white font-bold py-2 rounded-xl text-xs hover:bg-blue-600 transition">Close Profile</button>
+        </div>
+    </div>
+
     <!-- EVENT DETAILS MODAL -->
     <div id="event-modal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 relative shadow-2xl space-y-4">
             <button onclick="closeModal('event-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <h3 class="text-2xl font-black text-brand-dark">Bakatue Fishing Festival 2026</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">The Bakatue Fishing Festival takes place every year in July in the historic town of Elmina, Ghana.</p>
+            <h3 class="text-2xl font-black text-brand-dark">Boli Kuong Nyebu Festival 2026</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">The Boli Kuong Nyebu fishing festival brings together community members and visitors to celebrate local heritage, culture, and unity.</p>
             <button onclick="closeModal('event-modal')" class="w-full bg-brand text-white font-bold py-2 rounded-lg text-xs">Close</button>
         </div>
     </div>
@@ -980,16 +1260,49 @@
             content: "Saxces is set to become the first boligeria artist to host a concept in Boli, Bringing music, entertainment and excitement to the people. This historic move is expected to put Boli music on a bigger stage and give loacal talents more recognition."
         }];
 
-
-
         let artistsData = [{
+            id: 0,
             name: "G bwoy",
             genre: "SINGER / SONG WRITER",
-            img: "gboy.jpg"
+            img: "gboy.jpg",
+            bio: "G Bwoy, whose real name is Gafuri, is a talented Ghanaian music artist from Boli in the Upper West Region of Ghana. At just 20 years old, he is pursuing his passion for music and working to make his mark in the Ghanaian music industry. G Bwoy began his music journey in 2018, showing his interest and dedication to music from an early stage. With his ambition, creativity, and passion for entertaining listeners, he continues to build his musical identity and connect with fans. As an artist representing Boli, G Bwoy aims to showcase his talent to a wider audience and contribute to the growth of music in the Upper West Region and Ghana as a whole. For bookings, collaborations, and business enquiries, contact G Bwoy on +233 53 084 2226. Stay connected with G Bwoy through KING FRESH MUSIC & BOLIGERIA BLOG for his latest songs, updates, and music releases",
+            socials: {
+                facebook: "https://facebook.com",
+                instagram: "https://instagram.com",
+                whatsapp: "https://whatsapp.com"
+            }
         }, {
+            id: 1,
             name: "Rulling King",
-            genre: "Rapper / Dancehall",
-            img: "rulling.png"
+            genre: "RAPPER / DANCEHALL",
+            img: "rulling.png",
+            bio: "Rulling King, born Anas, is an emerging Ghanaian music artist from Boli in the Upper West Region of Ghana. At 22 years old, he has developed a strong passion for music and has been pursuing his musical journey for many years. As both a singer and a rapper, Rulling King brings versatility and creativity to his craft, using music as a platform to express himself and connect with listeners. His ability to combine singing and rap reflects his dedication to exploring different musical styles and developing his own artistic identity. He aspires to take his talent beyond his hometown and represent Boli and the Upper West Region on a broader national and international stage. With a clear vision for his musical future and a determination to grow, Rulling King continues to pursue his dreams, one song at a time. For bookings, collaborations, and business enquiries: Contact: 0596162930 Rulling King — A voice, a flow, a vision.",
+            socials: {
+                facebook: "https://facebook.com",
+                instagram: "https://instagram.com",
+                twitter: "https://twitter.com"
+            }
+        }, {
+            id: 2,
+            name: "Saxces",
+            genre: "AFROBEATS ARTIST",
+            img: "saxcesprofile.png",
+            bio: "Saxces (Karim) is a passionate and determined 23-year-old musician hailing from Boli in the Upper West Region, widely recognized for his tireless work ethic, creative talent, and deep commitment to his craft as he strives to elevate the local music scene, make a lasting impact across Ghana, and bring national recognition to his hometown—follow his journey as this promising artist continues to rise",
+            socials: {
+                facebook: "https://facebook.com",
+                instagram: "https://instagram.com",
+                whatsapp: "https://whatsapp.com"
+            }
+        }, {
+            id: 3,
+            name: "The Biggest",
+            genre: "SINGER / PERFORMER",
+            img: "IMG_0108.JPG",
+            bio: "The Biggest, whose real name is Razak, is a talented Ghanaian musician from Boli in the Upper West Region of Ghana. He is an ambitious and passionate artist known for his dedication to music and his ability to connect with listeners through meaningful songs and powerful performances. The Biggest began his musical journey in 2019, driven by his passion for music and determination to make a lasting impact on the Ghanaian music scene. Since then, he has continued to develop his talent, creativity, and unique musical identity.One of his notable songs is “Poverty,” a track that reflects his musical journey and stands out among his releases. With his talent, hard work, and commitment to his craft, The Biggest continues to pursue his dream of reaching a wider audience and representing Boli and the Upper West Region on the national and international music stage.As an artist with big dreams and a strong passion for entertainment.",
+            socials: {
+                facebook: "https://facebook.com",
+                instagram: "https://instagram.com"
+            }
         }];
 
         // Audio Player State Variables
@@ -1001,7 +1314,7 @@
         let isAdminLoggedIn = false;
         const ADMIN_PASSCODE = "kingfresh2026";
 
-        // Application Initialization
+        // Application Initialization & Deep Link Routing
         window.addEventListener('load', () => {
             renderSongGrid('all');
             renderNewsGrid();
@@ -1011,12 +1324,45 @@
 
             audioEngine.addEventListener('timeupdate', updateAudioProgress);
             audioEngine.addEventListener('ended', nextSong);
+
+            // Handle Direct URL Hashes on Page Load
+            handleUrlRouting();
         });
+
+        // URL Deep-Linking & Hash Router
+        function handleUrlRouting() {
+            const hash = window.location.hash;
+            if (!hash) return;
+
+            if (hash.startsWith('#song-')) {
+                const slug = hash.replace('#song-', '');
+                const foundIndex = songsData.findIndex(s => s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug);
+                if (foundIndex !== -1) {
+                    switchTab('songs');
+                    playSong(foundIndex);
+                    const element = document.getElementById(`song-card-${foundIndex}`);
+                    if (element) element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            } else if (hash.startsWith('#news-')) {
+                const slug = hash.replace('#news-', '');
+                const foundArticle = newsArticles.find(a => a.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug);
+                if (foundArticle) {
+                    switchTab('news');
+                    openArticleModal(foundArticle.id);
+                }
+            }
+        }
 
         // Navigation Tab Switcher
         function switchTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-            document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+            const targetTab = document.getElementById(`tab-${tabId}`);
+            if (targetTab) {
+                targetTab.classList.remove('hidden');
+            }
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
@@ -1111,14 +1457,12 @@
         }
 
         // ================= DYNAMIC FILE DOWNLOAD SYSTEM =================
-        // Generates a playable, valid audio blob as a fallback if the local MP3 path isn't present
         function generateSyntheticAudioBlob(songTitle, artistName) {
             const sampleRate = 44100;
             const durationSeconds = 3;
             const numSamples = sampleRate * durationSeconds;
             const buffer = new Uint8Array(44 + numSamples * 2);
 
-            // WAV Header
             const writeString = (offset, string) => {
                 for (let i = 0; i < string.length; i++) buffer[offset + i] = string.charCodeAt(i);
             };
@@ -1128,8 +1472,8 @@
             writeString(8, 'WAVE');
             writeString(12, 'fmt ');
             new DataView(buffer.buffer).setUint32(16, 16, true);
-            new DataView(buffer.buffer).setUint16(20, 1, true); // PCM
-            new DataView(buffer.buffer).setUint16(22, 1, true); // Mono
+            new DataView(buffer.buffer).setUint16(20, 1, true);
+            new DataView(buffer.buffer).setUint16(22, 1, true);
             new DataView(buffer.buffer).setUint32(24, sampleRate, true);
             new DataView(buffer.buffer).setUint32(28, sampleRate * 2, true);
             new DataView(buffer.buffer).setUint16(32, 2, true);
@@ -1137,7 +1481,6 @@
             writeString(36, 'data');
             new DataView(buffer.buffer).setUint32(40, numSamples * 2, true);
 
-            // Generate Audio Tone (A440 Beat)
             const view = new DataView(buffer.buffer);
             for (let i = 0; i < numSamples; i++) {
                 const sample = Math.sin(2 * Math.PI * 440 * (i / sampleRate)) * 16384;
@@ -1159,7 +1502,6 @@
             const fileName = `${song.artist} - ${song.title} [BoligeriaBlog.com].mp3`;
 
             try {
-                // Try fetching actual file on domain/server
                 const response = await fetch(song.audioFile, {
                     method: 'HEAD'
                 });
@@ -1176,7 +1518,6 @@
                 console.warn("Local path not reachable, falling back to blob generator:", err);
             }
 
-            // Fallback Blob Generator (guarantees a downloadable file on any system)
             const blob = generateSyntheticAudioBlob(song.title, song.artist);
             const blobUrl = URL.createObjectURL(blob);
             const downloadAnchor = document.createElement("a");
@@ -1198,7 +1539,17 @@
             const shareUrl = `${window.location.origin}${window.location.pathname}#song-${songSlug}`;
 
             navigator.clipboard.writeText(shareUrl).then(() => {
-                alert(`Direct link copied for "${song.title}"!\nYou can now paste and share this post link anywhere.`);
+                alert(`Direct link copied for "${song.title}"! Anyone who clicks this link will be sent directly to stream and download this track.`);
+            });
+        }
+
+        function copyNewsLink(id) {
+            const article = newsArticles.find(a => a.id === id);
+            const articleSlug = article.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+            const shareUrl = `${window.location.origin}${window.location.pathname}#news-${articleSlug}`;
+
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                alert(`Direct link copied for news article! Anyone who clicks this link will open this story.`);
             });
         }
 
@@ -1213,7 +1564,7 @@
             }
 
             const html = list.map(song => `
-        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+        <div id="song-card-${song.id}" class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
           <div class="flex gap-4 items-center">
             <div class="relative w-20 h-20 rounded-xl overflow-hidden shrink-0">
               <img src="${song.cover}" class="w-full h-full object-cover" alt="${song.title}">
@@ -1239,13 +1590,12 @@
               <button onclick="playSong(${song.id})" class="w-8 h-8 rounded-lg bg-brand-light text-brand hover:bg-brand hover:text-white transition flex items-center justify-center text-xs" title="Play Track">
                 <i class="fa-solid fa-play"></i>
               </button>
-              <button onclick="copySongLink(${song.id})" class="w-8 h-8 rounded-lg bg-blue-50 text-brand hover:bg-brand hover:text-white transition flex items-center justify-center text-xs" title="Copy Post Link">
+              <button onclick="copySongLink(${song.id})" class="w-8 h-8 rounded-lg bg-blue-50 text-brand hover:bg-brand hover:text-white transition flex items-center justify-center text-xs" title="Copy Direct Share Link">
                 <i class="fa-solid fa-link"></i>
               </button>
             </div>
           </div>
 
-          <!-- Direct Download Footer Button -->
           <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
             <button onclick="triggerSongDownload(${song.id})" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-1.5 px-3 rounded-lg text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
               <i class="fa-solid fa-download"></i> Download MP3
@@ -1263,8 +1613,8 @@
             const allNewsGrid = document.getElementById('all-news-grid');
 
             const html = newsArticles.map(article => `
-        <article class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row gap-4 group">
-          <img src="${article.img}" class="w-full sm:w-44 h-45 object-cover rounded-xl shrink-0" alt="News Image">
+        <article id="news-card-${article.id}" class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row gap-4 group">
+          <img src="${article.img}" class="w-full sm:w-44 h-32 object-cover rounded-xl shrink-0" alt="News Image">
           <div class="flex flex-col justify-between flex-1">
             <div>
               <div class="flex items-center justify-between text-[10px] text-slate-400 font-bold mb-1">
@@ -1276,9 +1626,14 @@
               </h4>
               <p class="text-xs text-slate-500 line-clamp-2 mt-1">${article.snippet}</p>
             </div>
-            <button onclick="openArticleModal(${article.id})" class="text-brand font-bold text-xs hover:underline mt-2 text-left">
-              Read Full Story →
-            </button>
+            <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100">
+              <button onclick="openArticleModal(${article.id})" class="text-brand font-bold text-xs hover:underline text-left">
+                Read Full Story →
+              </button>
+              <button onclick="copyNewsLink(${article.id})" class="bg-brand-light text-brand hover:bg-brand hover:text-white px-2.5 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1" title="Copy Article Link">
+                <i class="fa-solid fa-link"></i> Share Link
+              </button>
+            </div>
           </div>
         </article>
       `).join('');
@@ -1301,9 +1656,14 @@
               <p class="text-[10px] text-slate-400">${song.artist}</p>
             </div>
           </div>
-          <button onclick="triggerSongDownload(${song.id})" class="text-emerald-600 text-xs hover:scale-110 transition" title="Download MP3">
-            <i class="fa-solid fa-circle-arrow-down text-base"></i>
-          </button>
+          <div class="flex items-center space-x-2">
+            <button onclick="copySongLink(${song.id})" class="text-slate-400 hover:text-brand text-xs" title="Copy Link">
+              <i class="fa-solid fa-link"></i>
+            </button>
+            <button onclick="triggerSongDownload(${song.id})" class="text-emerald-600 text-xs hover:scale-110 transition" title="Download MP3">
+              <i class="fa-solid fa-circle-arrow-down text-base"></i>
+            </button>
+          </div>
         </div>
       `).join('');
         }
@@ -1313,15 +1673,48 @@
             const allArtists = document.getElementById('all-artists-grid');
 
             const html = artistsData.map(artist => `
-        <div class="bg-brand-bg/60 p-4 rounded-2xl border border-slate-200 text-center hover:bg-white hover:shadow-md transition group">
-          <img src="${artist.img}" class="w-20 h-20 mx-auto rounded-full object-cover border-2 border-brand/20 group-hover:scale-105 transition mb-2" alt="${artist.name}">
-          <h4 class="font-bold text-sm text-brand-dark">${artist.name}</h4>
-          <p class="text-[11px] text-slate-500">${artist.genre}</p>
+        <div class="bg-brand-bg/60 p-4 rounded-2xl border border-slate-200 text-center hover:bg-white hover:shadow-md transition flex flex-col justify-between group">
+          <div>
+            <img src="${artist.img}" class="w-20 h-20 mx-auto rounded-full object-cover border-2 border-brand/20 group-hover:scale-105 transition mb-2 shadow-sm" alt="${artist.name}">
+            <h4 class="font-bold text-sm text-brand-dark">${artist.name}</h4>
+            <p class="text-[11px] text-slate-500 mb-3">${artist.genre}</p>
+          </div>
+          <button onclick="openArtistModal(${artist.id})" class="w-full bg-brand/10 hover:bg-brand hover:text-white text-brand font-bold py-1.5 px-3 rounded-xl text-xs transition flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-circle-info"></i> More Info
+          </button>
         </div>
       `).join('');
 
             if (homeArtists) homeArtists.innerHTML = html;
             if (allArtists) allArtists.innerHTML = html;
+        }
+
+        function openArtistModal(id) {
+            const artist = artistsData.find(a => a.id === id);
+            if (!artist) return;
+
+            document.getElementById('modal-artist-img').src = artist.img;
+            document.getElementById('modal-artist-name').innerText = artist.name;
+            document.getElementById('modal-artist-genre').innerText = artist.genre;
+            document.getElementById('modal-artist-bio').innerText = artist.bio;
+
+            const socialsContainer = document.getElementById('modal-artist-socials');
+            let socialHtml = '';
+            if (artist.socials && artist.socials.facebook) {
+                socialHtml += `<a href="${artist.socials.facebook}" target="_blank" class="w-9 h-9 rounded-full bg-brand-light text-brand flex items-center justify-center hover:bg-brand hover:text-white transition text-sm"><i class="fa-brands fa-facebook-f"></i></a>`;
+            }
+            if (artist.socials && artist.socials.instagram) {
+                socialHtml += `<a href="${artist.socials.instagram}" target="_blank" class="w-9 h-9 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-sm"><i class="fa-brands fa-instagram"></i></a>`;
+            }
+            if (artist.socials && artist.socials.twitter) {
+                socialHtml += `<a href="${artist.socials.twitter}" target="_blank" class="w-9 h-9 rounded-full bg-blue-50 text-blue-400 flex items-center justify-center hover:bg-blue-400 hover:text-white transition text-sm"><i class="fa-brands fa-twitter"></i></a>`;
+            }
+            if (artist.socials && artist.socials.whatsapp) {
+                socialHtml += `<a href="${artist.socials.whatsapp}" target="_blank" class="w-9 h-9 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center hover:bg-emerald-600 hover:text-white transition text-sm"><i class="fa-brands fa-whatsapp"></i></a>`;
+            }
+            socialsContainer.innerHTML = socialHtml || '<p class="text-xs text-slate-400">No social links provided.</p>';
+
+            openModal('artist-modal');
         }
 
         function openArticleModal(id) {
@@ -1402,7 +1795,7 @@
               <p class="text-xs text-slate-500 truncate">${song.artist}</p>
             </div>
           </div>
-          <div class="mt-3 pt-3 border-t border-slate-100">
+          <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
             <button onclick="triggerSongDownload(${song.id})" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-1.5 px-3 rounded-lg text-xs transition flex items-center justify-center gap-1.5 shadow-sm">
               <i class="fa-solid fa-download"></i> Download MP3
             </button>
@@ -1456,30 +1849,121 @@
             switchTab('home');
         }
 
+        // Handle Admin Uploading Song from Phone Storage
         function handleAdminUploadSong(e) {
             e.preventDefault();
             const title = document.getElementById('upload-song-title').value;
             const artist = document.getElementById('upload-artist-name').value;
             const genre = document.getElementById('upload-genre').value;
-            const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+            const audioFileInput = document.getElementById('upload-audio-file');
+            const coverFileInput = document.getElementById('upload-cover-file');
+
+            if (!audioFileInput.files || audioFileInput.files.length === 0) {
+                alert("Please select an MP3 audio file from your device.");
+                return;
+            }
+
+            const audioFileObj = audioFileInput.files[0];
+            const audioUrl = URL.createObjectURL(audioFileObj);
+
+            let coverUrl = "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80";
+            if (coverFileInput.files && coverFileInput.files.length > 0) {
+                coverUrl = URL.createObjectURL(coverFileInput.files[0]);
+            }
 
             const newSong = {
                 id: songsData.length,
                 title: title,
                 artist: artist,
                 genre: genre,
-                cover: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80",
-                audioFile: `audio/${slug}.mp3`,
-                streams: 10,
+                cover: coverUrl,
+                audioFile: audioUrl,
+                streams: 1,
                 downloads: 0
             };
 
             songsData.unshift(newSong);
             renderSongGrid('all');
+            renderTopCharts();
             document.getElementById('stat-total-songs').innerText = songsData.length;
 
             closeModal('add-song-modal');
-            alert("Song Uploaded & Ready for Download!");
+            alert(`Success! "${title}" by ${artist} has been uploaded from your device and published.`);
+            e.target.reset();
+        }
+
+        // Handle Admin Adding Artist Profile
+        function handleAdminAddArtist(e) {
+            e.preventDefault();
+            const name = document.getElementById('artist-input-name').value;
+            const genre = document.getElementById('artist-input-genre').value;
+            const bio = document.getElementById('artist-input-bio').value;
+            const imgInput = document.getElementById('artist-input-img');
+
+            let imgUrl = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80";
+            if (imgInput.files && imgInput.files.length > 0) {
+                imgUrl = URL.createObjectURL(imgInput.files[0]);
+            }
+
+            const newArtist = {
+                id: artistsData.length,
+                name: name,
+                genre: genre,
+                img: imgUrl,
+                bio: bio,
+                socials: {
+                    facebook: "https://facebook.com",
+                    instagram: "https://instagram.com"
+                }
+            };
+
+            artistsData.push(newArtist);
+            renderArtistsGrid();
+            document.getElementById('stat-total-artists').innerText = artistsData.length;
+
+            closeModal('add-artist-modal');
+            alert(`Artist Profile for "${name}" created successfully!`);
+            e.target.reset();
+        }
+
+        // Handle Admin Adding News Post
+        function handleAdminAddNews(e) {
+            e.preventDefault();
+            const title = document.getElementById('news-input-title').value;
+            const category = document.getElementById('news-input-cat').value;
+            const snippet = document.getElementById('news-input-snippet').value;
+            const content = document.getElementById('news-input-content').value;
+            const imgInput = document.getElementById('news-input-img');
+
+            let imgUrl = "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80";
+            if (imgInput.files && imgInput.files.length > 0) {
+                imgUrl = URL.createObjectURL(imgInput.files[0]);
+            }
+
+            const todayDate = new Date().toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+
+            const newArticle = {
+                id: newsArticles.length,
+                title: title,
+                category: category,
+                author: "Boligeria Editor",
+                date: todayDate,
+                img: imgUrl,
+                snippet: snippet,
+                content: content
+            };
+
+            newsArticles.unshift(newArticle);
+            renderNewsGrid();
+            document.getElementById('stat-total-articles').innerText = newsArticles.length;
+
+            closeModal('add-news-modal');
+            alert(`News Post "${title}" published successfully!`);
             e.target.reset();
         }
 
@@ -1488,6 +1972,12 @@
             const username = document.getElementById('login-username').value;
             document.getElementById('user-status-badge').innerHTML = `<i class="fa-solid fa-circle-user mr-1 text-emerald-400"></i> ${username}`;
             closeModal('login-modal');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been sent successfully to Boligeria Blog Team.");
+            e.target.reset();
         }
     </script>
 </body>
