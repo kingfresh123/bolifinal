@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOLIGERIA BLOG | Premium African Music & News</title>
-    
+
     <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6017011940178941" crossorigin="anonymous"></script>
 
@@ -1244,13 +1245,13 @@
 
         let newsArticles = [{
             id: 0,
-            title: "SAXCES ANNOUNCES BOLIGERIA CONCERT IN BOLI, UPPER WEST REGION! 🎤🎶",
+            title: "🔥G BWOY SET TO HOST A BIG SHOW IN BOLI🔥! 🎤🎶",
             category: "🔥 BREAKING ENTERTAINMENT NEWS! 🔥",
             author: "Boligeria Editor",
-            date: "December 20, 2026",
-            img: "saxcesc.jpg",
-            snippet: "History is about to be made in Boli as Saxces announces the upcoming Boligeria Concert, marking a major milestone for the Boligeria music scene.",
-            content: "Saxces is set to become the first boligeria artist to host a concept in Boli, Bringing music, entertainment and excitement to the people. This historic move is expected to put Boli music on a bigger stage and give loacal talents more recognition."
+            date: "December 19, 2026",
+            img: "gbwoy.jpg",
+            snippet: "G BWOY is set to host a massive musical show in Boli on 19th December 2026. Get ready for an unforgettable night of music and entertainment!.",
+            content: "Excitement is building as talented Boligeria music star G BWOY prepares to host a major musical show in Boli, Upper West Region, Ghana, on 19th December 2026. The upcoming event promises an exciting atmosphere filled with music, entertainment, dancing and unforgettable performances. G BWOY is calling on fans, music lovers and supporters to get ready for this special occasion as Boli prepares to experience an exciting night of entertainment. Event Details: Artist: G BWOY Event: Musical Show Date: 19th December 2026 Location: Boli, Upper West Region, Ghana Stay connected to Boligeria Blog for more updates, announcements and details about the upcoming show🔥."
         }, {
             id: 1,
             title: "SAXCES ANNOUNCES BOLIGERIA CONCERT IN BOLI, UPPER WEST REGION! 🎤🎶",
@@ -1328,7 +1329,7 @@
             audioEngine.addEventListener('ended', nextSong);
 
             // Handle Direct URL Hashes on Page Load
-            handleUrlRouting();
+            setTimeout(handleUrlRouting, 150);
         });
 
         // URL Deep-Linking & Hash Router
@@ -1342,11 +1343,18 @@
                 if (foundIndex !== -1) {
                     switchTab('songs');
                     playSong(foundIndex);
-                    const element = document.getElementById(`song-card-${foundIndex}`);
-                    if (element) element.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
+
+                    setTimeout(() => {
+                        const element = document.getElementById(`song-card-${foundIndex}`);
+                        if (element) {
+                            element.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                            element.classList.add('ring-4', 'ring-brand');
+                            setTimeout(() => element.classList.remove('ring-4', 'ring-brand'), 2000);
+                        }
+                    }, 100);
                 }
             } else if (hash.startsWith('#news-')) {
                 const slug = hash.replace('#news-', '');
@@ -1541,7 +1549,7 @@
             const shareUrl = `${window.location.origin}${window.location.pathname}#song-${songSlug}`;
 
             navigator.clipboard.writeText(shareUrl).then(() => {
-                alert(`Direct link copied for "${song.title}"! Anyone who clicks this link will be sent directly to stream and download this track.`);
+                alert(`Direct link copied for "${song.title}"! Anyone who pastes this link will open straight to this song and start playing/ready for download.`);
             });
         }
 
@@ -1551,7 +1559,7 @@
             const shareUrl = `${window.location.origin}${window.location.pathname}#news-${articleSlug}`;
 
             navigator.clipboard.writeText(shareUrl).then(() => {
-                alert(`Direct link copied for news article! Anyone who clicks this link will open this story.`);
+                alert(`Direct link copied for news article! Anyone who pastes this link will open straight to this story.`);
             });
         }
 
@@ -1851,7 +1859,6 @@
             switchTab('home');
         }
 
-        // Handle Admin Uploading Song from Phone Storage
         function handleAdminUploadSong(e) {
             e.preventDefault();
             const title = document.getElementById('upload-song-title').value;
@@ -1895,7 +1902,6 @@
             e.target.reset();
         }
 
-        // Handle Admin Adding Artist Profile
         function handleAdminAddArtist(e) {
             e.preventDefault();
             const name = document.getElementById('artist-input-name').value;
@@ -1929,7 +1935,6 @@
             e.target.reset();
         }
 
-        // Handle Admin Adding News Post
         function handleAdminAddNews(e) {
             e.preventDefault();
             const title = document.getElementById('news-input-title').value;
